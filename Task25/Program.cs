@@ -11,7 +11,12 @@ namespace Task25
     {
         static double PowN (double x, double y)
         {
-            return Math.Pow(x, y);
+            double res = 1;
+            for (int i = 0; i < y; i++)
+            {
+                res *= x;
+            }
+            return res;
         }
         static void Main()
         {
