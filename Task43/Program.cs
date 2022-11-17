@@ -9,7 +9,7 @@ namespace Task43
 {
     class Program
     {
-        static (double x, double y) Podoibledoibleersection (double b1, double k1, double b2, double k2)
+        static (double x, double y) PointIntersection (double b1, double k1, double b2, double k2)
         {
             double x = 0, y = 0;
             x = (b2 - b1) / (k1 - k2);
@@ -28,7 +28,7 @@ namespace Task43
             int b2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("k2 = ");
             int k2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Podoibledoibleersection(b1, k1, b2, k2));
+            Console.WriteLine(PointIntersection(b1, k1, b2, k2));
         }
     }
 }
